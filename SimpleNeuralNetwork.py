@@ -3,9 +3,9 @@ import torch.nn as nn
 import torchsummary
 
 
-class SimpleANN(nn.Module):
+class SimpleNN(nn.Module):
     def __init__(self):
-        super(SimpleANN, self).__init__()
+        super(SimpleNN, self).__init__()
         self.fc1 = nn.Linear(4, 6)
         self.fc2 = nn.Linear(6, 8)
         self.fc3 = nn.Linear(8, 4)
@@ -25,7 +25,7 @@ class SimpleANN(nn.Module):
         return x
     
 # Initialize the network
-model = SimpleANN()
+model = SimpleNN()
 
 sample_input = torch.randn(16, 4)  # Batch size of 16, 4 features
 sample_output = model(sample_input).detach()
