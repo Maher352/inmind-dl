@@ -1,0 +1,6 @@
+train: ../Project/data/yolo_training/train/images
+val: ../Project/data/yolo_training/validate/images
+
+nc: 9  # number of classes
+
+names: ['forklift', 'rack', 'crate', 'floor', 'railing', 'pallet', 'stillage', 'iwhub', 'dolly']
