@@ -135,12 +135,15 @@ def visualize2D(image_rgb, bboxes):
     plt.title(f'Image with Bounding Boxes')
     plt.show()
 
-'''
+#'''
 # Example usage
-image_dir = 'Project\data\images'
+image_dir = r'Project\data\images'
 bbox_dir = r'Project\data\bounding_boxes'
+image_dir_wout_floor = r'Project\data\yolo_training\train\images'
+label_dir_wout_floor = r'Project\data\yolo_training\train\labels'
 limit = 3  #if you want to see the entire dataset, set the limit to a number greater than or equal to the dataset length
 
-#draw_with_bounding_boxes(image_dir, bbox_dir, limit)
-transform_and_visualize(image_dir, bbox_dir, limit)
-'''
+draw_with_bounding_boxes(image_dir, bbox_dir, limit)
+draw_with_bounding_boxes(image_dir_wout_floor, label_dir_wout_floor, limit)
+#transform_and_visualize(image_dir, bbox_dir, limit)
+#'''
