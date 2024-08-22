@@ -1,4 +1,9 @@
 # visualize.py
+'''
+This file can be used to visualize all the images in the directory with their bounding boxes
+It can also visualize them after transformation
+Finally it has the visualize2D function which can be used in the dataloader
+'''
 
 import os
 import cv2
@@ -46,7 +51,6 @@ def draw_with_bounding_boxes(image_dir, bbox_dir, limit=10):
 
         if (limit_idx >= limit):
             break
-
 
 
 def transform_and_visualize(image_dir, bbox_dir, limit=10):
@@ -118,8 +122,20 @@ def transform_and_visualize(image_dir, bbox_dir, limit=10):
             break
 
 
+def visualize2D(image_rgb, bboxes):
+    # Draw bounding boxes
+    for bbox in bboxes:
+        x_min, y_min, x_max, y_max = bbox
+        cv2.rectangle(image_rgb, (int(x_min), int(y_min)), (int(x_max), int(y_max)), (0, 255, 0), 2)
+    
+    # Display the image with Matplotlib
+    plt.figure(figsize=(10, 10))
+    plt.imshow(image_rgb)
+    plt.axis('off')  # Hide axis
+    plt.title(f'Image with Bounding Boxes')
+    plt.show()
 
-
+'''
 # Example usage
 image_dir = 'Project\data\images'
 bbox_dir = r'Project\data\bounding_boxes'
@@ -127,3 +143,4 @@ limit = 3  #if you want to see the entire dataset, set the limit to a number gre
 
 #draw_with_bounding_boxes(image_dir, bbox_dir, limit)
 transform_and_visualize(image_dir, bbox_dir, limit)
+'''
