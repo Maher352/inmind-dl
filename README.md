@@ -5,7 +5,7 @@ The main purpose of this repository is to get familiar with git commands and Git
 
 The second purpose of this repository is project submission
 
-!! yolov5 must be cloned to the repository as it is used for object detection
+!! yolov5 must be cloned to the repository as it is used for object detection: https://github.com/ultralytics/yolov5.git
 
 
 Regarding the Session folders: files are not polished (they need some rework and local adaptation, they were developed on google colab)
@@ -14,9 +14,13 @@ Regarding the Session folders: files are not polished (they need some rework and
 Regarding the project many things can be done to enhance it:
 
 1- the dataloader developped for the yolov5 model should receive the directories of images and npy files with the transform and output 
+    
     a- a folder containing the augmented images split into train and validate
+    
     b- with a folder containing text files ready to use by yolov5 (also split)
+    
     c- build the yaml file needed for the yolov5 training
+
 This will allow quick usage before training the yolov5 model
 
 2- the semantic segmentation model is not complete due to deadline restrictions
