@@ -8,6 +8,9 @@ The second purpose of this repository is project submission
 !! yolov5 must be cloned to the repository as it is used for object detection
 
 
+Regarding the Session folders: files are not polished (they need some rework and local adaptation, they were developed on google colab)
+
+
 Regarding the project many things can be done to enhance it:
 
 1- the dataloader developped for the yolov5 model should receive the directories of images and npy files with the transform and output 
