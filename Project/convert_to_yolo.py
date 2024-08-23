@@ -1,5 +1,11 @@
 # convert_to_yolo
 
+'''
+This file contains functions that can be used to convert bounding boxes to YOLO format
+It can only take this format (x_min, y_min, x_max, y_max) to transform into YOLO format (x_center, y_center, width, height)
+A feature was also added to allow for label mapping, incase labels were given in string format
+'''
+
 import os
 import numpy as np
 import cv2

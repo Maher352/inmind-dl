@@ -1,4 +1,4 @@
-Run this line of code in the terminal in yolov5 directory to infer using pytorch
+Run this line of code in the terminal in yolov5 directory to infer using the built-in inference file of yolov5
 
 
 python detect.py --weights 'runs/train/exp7/weights/best.pt' --source '../Project/data/images/rgb_0338.png'

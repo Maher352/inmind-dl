@@ -1,5 +1,13 @@
 # train_val_split.py
 
+'''
+This file is used to split the data into training and validation
+It utilises the dataset to filter out the invalid npy files, and their corresponding image
+And then it copies the split data into new folders to be used later
+
+!!!This file is not fully functional, the saved images should be AUGMENTED first!!! 
+'''
+
 import albumentations as A
 from dataset import BMWDataset
 import random

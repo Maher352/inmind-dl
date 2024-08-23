@@ -1,5 +1,11 @@
 # inference_torch.py
 
+# !!!THIS IS DEPENDENT ON THE LOCAL TRAINNING = CAN ONLY RUN ON THE DEVICE WHERE THE TRAINNING WAS DONE!!!
+
+'''
+This file is used to infere the trained model using the pyTorch library
+'''
+
 import time
 import cv2
 import torch

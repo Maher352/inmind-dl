@@ -2,8 +2,9 @@
 
 '''
 This file can be used as a custom dataset class for the provided dataset
-It takes the images and bounding boxes and converts them to tensor format after transforming them
-the function visualize2D is commented out, it can be used to visualize the images with their bboxes after augmentation
+It takes the images and bounding boxes and converts them to tensor format after transforming them (if transform was provided)
+it has a function that can be used to map the labels in case they were in string format
+the main purpose of this dataset is to clean out the indices of invalid bbox files
 '''
 
 import os

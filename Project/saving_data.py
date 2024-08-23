@@ -1,5 +1,10 @@
 # saving_data.py
 
+'''
+This file contains a single function that can be used to copy data from 1 folder into another one
+It is used for splitting the data into trainning and validation
+'''
+
 import os
 from shutil import copy2
 

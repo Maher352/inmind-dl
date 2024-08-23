@@ -1,5 +1,14 @@
 # inference_onnx.py
 
+'''
+This file is used for infering the yolov5 model using onnx
+even though it is functional the bounding boxes are missplaced, it cannot be used yet
+!!!Debugging is needed, FILE NOT READY!!!
+
+the export worked... the onnx file can be loaded from a separate folder local to 'Project'
+this feature was reversed since the file is not ready anyways
+'''
+
 import time
 import onnxruntime as ort
 import cv2

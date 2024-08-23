@@ -1,5 +1,9 @@
 # read_first_file
 
+'''
+This file can be used to take a quick look on the data to check for any patterns or anomalies
+'''
+
 import numpy as np
 import json
 import matplotlib.pyplot as plt

@@ -1,8 +1,11 @@
 # visualize.py
+
 '''
 This file can be used to visualize all the images in the directory with their bounding boxes
 It can also visualize them after transformation
-Finally it has the visualize2D function which can be used in the dataloader
+
+Finally it has the visualize2D function which was used in earlier versions of the dataloader 
+to check that it can indeed trasform images
 '''
 
 import os

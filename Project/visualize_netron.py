@@ -1,5 +1,9 @@
 # visualize_netron.py
 
+'''
+This file is used to visualize the Network using Netron
+'''
+
 import netron
 
 # Path to your ONNX model
